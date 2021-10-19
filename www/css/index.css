@@ -126,6 +126,9 @@ p{
 #signinPage{
     height: 100%;
     background-color: #015289;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #signinPage #register{
@@ -151,5 +154,3 @@ p{
     width: 100%;
     border-radius: 100%;
 }
-
-
