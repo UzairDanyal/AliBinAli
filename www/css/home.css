@@ -1,0 +1,74 @@
+#homepage{
+    background: #fff;
+}
+#homepage .profile{
+    background: url('../img/194235-c932fo@2X.png');
+    background-size:cover;
+}
+
+#homepage .tabs .row{
+    height: 43px;
+}
+
+#homepage .tabs .col-33{
+    background: #E55204;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+
+#homepage .tabs .col-33.active{
+    background: white;
+    color:black;
+}
+
+#homepage .tabs .see-all{
+    text-align: right;
+    padding: 10px;
+}
+
+#homepage .tabs .see-all a{
+    color: #E55204 !important;
+}
+
+#homepage #discount-tab .swiper-slide{
+    margin:auto;
+}
+
+
+.swiper-image{
+    width: 100%;
+    padding-bottom: 40px;
+    height: 150px;
+    text-align: center;
+}
+
+.swiper-image img{
+height: inherit;
+margin: auto;
+}
+
+
+
+#events-tabar-modal{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: url('../img/svg/home events bs.svg');
+    height: 187px;
+    z-index: 1000;
+    background-size: contain;
+}
+.birthday-card{
+    height: 63px;
+    background: #fff;
+}
+
+.toolbar{
+    z-index: 1;
+}

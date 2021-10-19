@@ -66,8 +66,11 @@
     <title>My App</title>
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="packages/core/framework7-bundle.min.css">
+    <link rel="stylesheet" href="packages/core/framework7-icons.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
 
 <body>
@@ -109,7 +112,7 @@
           <p>Page content goes here</p>
           <!-- Link to another page -->
           <a onclick="app.views.main.router.navigate('/signin/')">login Page</a>
-          
+          <br/>
           <a onclick="app.views.main.router.navigate('/home/')">Home</a>
         </div>
       </div>
