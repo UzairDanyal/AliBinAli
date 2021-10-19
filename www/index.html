@@ -18,9 +18,10 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--
+
+<head>
+  <meta charset="utf-8">
+  <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -29,7 +30,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -50,12 +51,14 @@
     </body>
 </html> -->
 
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+  <html>
+
   <head>
     <!-- Required meta tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
@@ -66,45 +69,57 @@
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="./css/index.css">
   </head>
-  <body>
-    <!-- App root element -->
-    <div id="app">
 
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
+<body>
+  <!-- App root element -->
+  <div id="app">
 
-          <!-- Top Navbar -->
-          <div class="navbar">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-              <div class="title">Awesome App</div>
-            </div>
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+      <!-- Top Navbar -->
+      <div class="navbar" style="height: 63px;">
+        <div class="navbar-bg" style="background-color: #0072BC;"></div>
+        <div class="navbar-inner">
+          <div class="left">
+            <img src="./img/humburger@1X.png" style="width: 20px;height: 15px;margin-left: 10px;"/>
           </div>
-
-          <!-- Bottom Toolbar -->
-          <div class="toolbar toolbar-bottom">
-            <div class="toolbar-inner">
-              <!-- Toolbar links -->
-              <a href="#" class="link">Link 1</a>
-              <a href="#" class="link">Link 2</a>
+          <div class="title" style="margin:auto">
+            <img src="./img/alalogo.png" style="height: 50px;" />
+            <div class="right">
+              <img src="./img/humburger@1X.png" style="width: 20px;height: 15px;margin-left: 10px;opacity: 0;"/>
             </div>
-          </div>
-
-          <!-- Scrollable page content -->
-          <div class="page-content">
-            <p>Page content goes here</p>
-            <!-- Link to another page -->
-            <a onclick="app.views.main.router.navigate('/signin/')">login Page</a>
           </div>
         </div>
       </div>
+      <!-- Initial Page, "data-name" contains page name -->
+      <div data-name="home" class="page">
+
+
+        <!-- Bottom Toolbar -->
+        <div class="toolbar toolbar-bottom">
+          <div class="toolbar-inner">
+            <!-- Toolbar links -->
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+          </div>
+        </div>
+
+        <!-- Scrollable page content -->
+        <div class="page-content">
+          <p>Page content goes here</p>
+          <!-- Link to another page -->
+          <a onclick="app.views.main.router.navigate('/signin/')">login Page</a>
+          
+          <a onclick="app.views.main.router.navigate('/home/')">Home</a>
+        </div>
+      </div>
     </div>
-    <!-- Path to Framework7 Library Bundle JS-->
-    <script type="text/javascript" src="packages/core/framework7-bundle.min.js"></script>
-    <script src="js/routes.js"></script>
-    <!-- Path to your app js-->
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
+  </div>
+  <!-- Path to Framework7 Library Bundle JS-->
+  <script type="text/javascript" src="packages/core/framework7-bundle.min.js"></script>
+  <script src="js/routes.js"></script>
+  <!-- Path to your app js-->
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>
