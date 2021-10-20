@@ -184,7 +184,9 @@ p,span{
 }
 #signinPage #signin{
     background-color: #4e86ad;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: 'alata';
+    color: white;
 }
 
 /* My profile css */
