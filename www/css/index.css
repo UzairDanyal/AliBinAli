@@ -1,21 +1,68 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+
+@font-face {
+    font-family: 'sf pro text';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/sf-pro-text-regular.woff);
+    src: local('sf pro text'), local('sf-pro-text'), url(../fonts/sf-pro-text-regular.woff) format('woff2'), url(../fonts/sf-pro-text-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Framework7 Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Framework7Icons-Regular.eot");
+    src: url("../fonts/Framework7Icons-Regular.woff2") format("woff2"), url("../fonts/Framework7Icons-Regular.woff") format("woff"), url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'font_awesome_5_brandsregular';
+    src: url('../fonts/webfontkit/font_awesome_5_brands-regular-400-webfont.woff2') format('woff2'), url('../fonts/webfontkit/font_awesome_5_brands-regular-400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_awesome_5_duotonesolid';
+    src: url('../fonts/webfontkit/font_awesome_5_duotone-solid-900-webfont.woff2') format('woff2'), url('../fonts/webfontkit/font_awesome_5_duotone-solid-900-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_awesome_5_freeregular';
+    src: url('./fonts/webfontkit/font_awesome_5_free-regular-400-webfont.woff2') format('woff2'), url('../fonts/webfontkit/font_awesome_5_free-regular-400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_awesome_5_freesolid';
+    src: url('../fonts/webfontkit/font_awesome_5_free-solid-900-webfont.woff2') format('woff2'), url('../fonts/webfontkit/font_awesome_5_free-solid-900-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_awesome_5_prolight';
+    src: url('../fonts/webfontkit/font_awesome_5_pro-light-300-webfont.woff2') format('woff2'), url('../fonts/webfontkit/font_awesome_5_pro-light-300-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_awesome_5_proregular';
+    src: url('../fonts/webfontkit/font_awesome_5_pro-regular-400-webfont.woff2') format('woff2'), url('../fonts/webfontkit/font_awesome_5_pro-regular-400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_awesome_5_prosolid';
+    src: url('../fonts/webfontkit/font_awesome_5_pro-solid-900-webfont.woff2') format('woff2'), url('../fonts/webfontkit/font_awesome_5_pro-solid-900-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
