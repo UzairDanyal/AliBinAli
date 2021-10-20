@@ -162,3 +162,63 @@ p{
     width: 100%;
     border-radius: 100%;
 }
+
+
+/* for the Directory page */
+
+.page-content .searchbar:not(.searchbar-inline) .searchbar-inner, .page-content .searchbar:not(.searchbar-inline) input[type=search], .page-content .searchbar:not(.searchbar-inline) input[type=text] {
+    background-color: #EFEFEF;
+    border-radius: 50px;
+}
+
+.page-content .searchbar:not(.searchbar-inline) {
+    border-radius: var(--f7-searchbar-in-page-content-border-radius);
+    margin: var(--f7-searchbar-in-page-content-margin);
+    width: auto;
+    box-shadow: none;
+    margin: 4% 5%;
+}
+.directoryImage{
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    border-radius: 10px;
+
+}
+.profileName{
+    color: #E2211C;
+    text-align: center;
+    font-weight: 800;
+    margin-top: auto;
+    margin-bottom: 20%;
+}
+
+
+/* for the promotion page */
+.segmented{
+    padding: 6px;
+    border: solid 1px #75A2D6;
+}
+
+.segmented-raised {
+    box-shadow: none;
+}
+
+.button-round{
+    color: #F7AC82;
+    font-size: 8px;
+    font-weight: 900;
+    
+}
+.button-active{
+    color: #E2211C; 
+    text-decoration: underline;
+    --f7-button-bg-color: none
+}
+.card{
+    margin: 0;
+}
+.promotionImage{
+    width: 100%;
+    margin: 3% 0;
+}

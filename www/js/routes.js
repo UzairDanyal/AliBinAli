@@ -19,5 +19,13 @@ var routes = [
           path: '/home/',
           url: './pages/home.html',
           name:'home'
+        },
+        {
+          path: '/appdirectory/',
+          url: './pages/appDirectory.html',
+        },
+        {
+          path: '/externalpromotions/',
+          url: './pages/externalPromotions.html',
         }
       ]
