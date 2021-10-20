@@ -160,7 +160,7 @@ h1 {
 .button{
     text-transform: none;
 }
-p{
+p,span{
     text-transform: none;
 }
  .txtTransNone{
@@ -189,7 +189,20 @@ p{
 
 /* My profile css */
 
-#myprofile > .row > .col-60 p{
+#myprofilePage{
+    background-image: url("../img/myprofilebg.png");
+    background-position-x: center;
+    background-size: cover;
+
+}
+
+#myprofile > #first span {
+    text-transform: none;
+    font-size: 3.7vw;
+    opacity: 0.8;
+}
+
+#myprofile > #second > .col-60 p{
     color: white;
     font-weight: bold;
     margin: 0px ;
@@ -197,19 +210,41 @@ p{
 }
 
 
-.navbar-background{
-    
-}
 .img-round-wrapper{
     border-radius: 50%;
     overflow: hidden;
 }
-#myprofile>.row>.col-40>img{
+#myprofile> #second >.col-40>img{
     height: 130px;
     width: 100%;
     border-radius: 100%;
 }
+#myprofile > #personalInfo{
+    padding: 20px;
+}
+#myprofile > #personalInfo  p {
+    margin: 0;
+}
+#myprofile > #personalInfo  div {
+    padding: 10px 20px;
+}
+#myprofile > #personalInfo > div:nth-of-type(odd) {
+    background-color: white;
+}
+        
+#myprofile > #personalInfo > div:nth-of-type(even) {
+    background-color:rgb(210, 224, 235, 0.9);
+    }
+#myprofile > #personalInfo .description{
+    color: orange;
+    font-size: 4.5vw;
+    font-weight: bold;
+}
 
+#myprofile > #personalInfo  .title{
+    color: #000000;
+    font-size: 3.8vw;
+}
 
 /* for the Directory page */
 

@@ -1,16 +1,21 @@
 <div class="page" data-name="myProfile">
-    <div class="page-content">
+    <div id = "myprofilePage" class="page-content">
         <div id="myprofile">
-            <div class='row' style="padding: 5px 20px; background-color: #0072BC;">
+            <div id = "first" class='row align-items-center' style="padding: 5px 20px;color: white; background-color: #0072BC;">
                 <div class="col-50">
-                    <p style="font-weight: bold; color: white; font-size: 5vw;">
+                    <p style="font-weight: bold;  font-size: 5vw;">
                         MY PROFILE
                     </p>
 
                 </div>
 
+                <div class="col-50 row justify-content-space-around"> 
+                    <span> <i class="fas fa-edit"></i><span><u> Edit</u></span> </span>
+                    <span> <i class="fas fa-sign-out-alt"></i> <span><u>Logout </u></span> </span>
+                </div>
+
             </div>
-            <div class="row align-items-center" style="background-color: #001829; padding: 30px 20px;height: 137px;">
+            <div id = "second" class="row align-items-center" style="background-color: rgb(0, 24, 41, 0.9); padding: 15px 20px;height: 137px;">
                 <div class="col-40" style="height:inherit">
                     <div style="width: 100%;height: inherit;border-radius: 50%;overflow: hidden;">
                         <img src="./img/myprofileMain.png" style="width: inherit;">
@@ -61,11 +66,11 @@
                     </div>
                 </div>
             </div>
-            <div class="justify-content-center no-gap row" style="color: white;font-weight: bold;font-size: 4vw;">
+            <div id = "third"  class="justify-content-center no-gap row" style="color: white;font-weight: bold;font-size: 4vw;">
                 <div class="align-items-center col-50 justify-content-center row" style="
     background-color: #E55204;
     text-align: center;
-    padding: 25px 10px;
+    padding: 15px 10px;
 ">
                     <span>
                         <img src="./img/flag.png" style="
@@ -79,7 +84,7 @@
                 <div class="align-items-center col-50 justify-content-center row" style="
     background-color: #F7AC82;
     text-align: center;
-    padding: 25px 10px;
+    padding: 15px 10px;
 ">
                     <span><img src="./img/group.png" style="
     height: 5vh;
@@ -89,6 +94,33 @@
 ">Groups</span>
                 </div>
             </div>
+
+            <div id="personalInfo">
+                <div>
+                    <p class="title"> Date of Birth</p>
+                    <p  class = "description"> 2 August 1991</p>
+                </div>
+                <div>
+                    <p class="title"> Gender</p>
+                    <p class = "description" > Female</p>
+                </div>
+                <div>
+                    <p class="title"> Mobile Number</p>
+                    <p class = "description" > +974 5521 0344</p>
+                </div>
+                <div>
+                    <p class="title"> Email</p>
+                    <p class = "description"> yvein.hernandez@alibinali.com</p>
+                </div>
+                <div>
+                    <p class="title"> Employee Number</p>
+                    <p class = "description"> 6300</p>
+                </div>
+                <div>
+                    <p class = "title">  <i class="fas fa-plus"></i> <span>Add new field</span></p>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
