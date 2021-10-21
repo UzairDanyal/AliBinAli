@@ -1,5 +1,6 @@
 #homepage{
     background: #fff;
+    text-transform: none;
 }
 #homepage .profile{
     background: url('../img/194235-c932fo@2X.png');
@@ -7,17 +8,19 @@
 }
 
 #homepage .tabs .row{
-    height: 43px;
+    font-size: 4vw;
+    background: #E55204;
 }
 
 #homepage .tabs .col-33{
-    background: #E55204;
+   
     color:white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100%;
+    padding: 2px;
 }
 
 
@@ -28,11 +31,16 @@
 
 #homepage .tabs .see-all{
     text-align: right;
-    padding: 10px;
+    padding: 5px 10px;
+;
 }
 
 #homepage .tabs .see-all a{
     color: #E55204 !important;
+    text-transform: none;
+    text-decoration: underline;
+    font-size: 4vw;
+    font-weight: bold;
 }
 
 #homepage #discount-tab .swiper-slide{

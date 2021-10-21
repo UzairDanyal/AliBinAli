@@ -250,12 +250,12 @@ p,span{
 
 /* for the Directory page */
 
-.page-content .searchbar:not(.searchbar-inline) .searchbar-inner, .page-content .searchbar:not(.searchbar-inline) input[type=search], .page-content .searchbar:not(.searchbar-inline) input[type=text] {
+#appDirectory.page-content .searchbar:not(.searchbar-inline) .searchbar-inner, .page-content .searchbar:not(.searchbar-inline) input[type=search], .page-content .searchbar:not(.searchbar-inline) input[type=text] {
     background-color: #EFEFEF;
     border-radius: 50px;
 }
 
-.page-content .searchbar:not(.searchbar-inline) {
+#appDirectory.page-content .searchbar:not(.searchbar-inline) {
     border-radius: var(--f7-searchbar-in-page-content-border-radius);
     margin: var(--f7-searchbar-in-page-content-margin);
     width: auto;
@@ -305,4 +305,36 @@ p,span{
 .promotionImage{
     width: 100%;
     margin: 3% 0;
+}
+
+
+
+#registrationContent.page-content {
+    overflow: auto;
+    background-color: #f9f9f9;
+}
+
+
+
+
+/* registeration Page */
+
+.searchbar:after {
+    width: 0;
+}
+#registrationContent  .button-round{
+    color: #FFFFFF;
+    background-color: #E55204;
+    width: 40%;
+    margin-top: 6%;
+    height: 40px;
+    font-size: 17px;
+}
+.genderselector {
+    width: 100%;
+    position: relative;
+    color: #a8a8a8;
+    font-size: 17px;
+    margin-left: 9%;
+    margin-top: 3%;
 }

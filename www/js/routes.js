@@ -16,6 +16,11 @@ var routes = [
           name:'signin'
         },
         {
+          path: '/flash/',
+          url: './pages/flash.html',
+          name:'flash'
+        },
+        {
           path: '/home/',
           url: './pages/home.html',
           name:'home'
@@ -27,5 +32,13 @@ var routes = [
         {
           path: '/externalpromotions/',
           url: './pages/externalPromotions.html',
+        },
+        {
+          path: '/latestpromotions/',
+          url: './pages/latestPromotions.html',
+        },
+        {
+          path: '/registration/',
+          url: './pages/registration.html',
         }
       ]
