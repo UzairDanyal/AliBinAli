@@ -47,14 +47,23 @@ var app = new Framework7({
   });
 
   $$(document).on('page:beforein', function (e) {
-   
-    if(app.views.main.router.url=="/signin/" || app.views.main.router.url=="/flash/"){
+   const currentUrl=app.views.main.router.url;
+    if(currentUrl=="/signin/" || currentUrl=="/flash/"){
       document.querySelector("#mainNavBar .navbar-inner")["style"].display = "none"
       document.querySelector("#mainNavBar .navbar-bg")["style"].background = "#015289";
     }
     else{
       document.querySelector("#mainNavBar .navbar-inner")["style"].display = ""
       document.querySelector("#mainNavBar .navbar-bg")["style"].background = "#0072BC";
+    }
+
+    if(currentUrl=="/home/"){
+    //   const birthdaySwiper = app.swiper.create('.swiper-container', {
+    //     spaceBetween: 30,
+    //     slidesPerView: document.documentElement.clientWidth/150.0
+    // });
+
+    
     }
   })
   

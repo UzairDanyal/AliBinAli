@@ -1,14 +1,19 @@
 <div class="page" data-name="sigin">
-  <div class="toolbar toolbar-bottom">
+  <div class="toolbar toolbar-bottom" id="#home-tabbar">
     <div class="toolbar-inner" style="
         font-size: 13px;
         padding: 12px;
         text-align: center;
         text-transform: none;">
-      <a ><div class="bottom-icon"><img src="./img/svg/survey.svg" /></div> <div class ="text">Survey</div></a>
-      <a > <div></div> <div class ="text">Events</div></a>
-      <a ><div class="bottom-icon"><img src="./img/svg/info.svg" /></div> <div class ="text">About Us</div></a>
-      <a ><div class="bottom-icon"><img src="./img/svg/galleryIcon.svg" /></div> <div class ="text">Gallery</div></a>
+        <div style="width: 100% !important;
+        height: var(--f7-toolbar-height);
+        display: flex;
+        justify-content: space-around;">
+          <div style="min-width: 15%;"><div class="bottom-icon"><img src="./img/svg/survey.svg" /></div> <div class ="text">Survey</div></div>
+          <div style="min-width: 15%;" class="tabbar-home-active"><div class="bottom-icon"><img src="./img/svg/info.svg" /></div> <div class ="text">Events</div></div>
+          <div style="min-width: 15%;" ><div class="bottom-icon"><img src="./img/svg/info.svg" /></div> <div class ="text">About Us</div></div>
+          <div style="min-width: 15%;" ><div class="bottom-icon"><img src="./img/svg/galleryIcon.svg" /></div> <div class ="text">Gallery</div></div>
+        </div>
     </div>
   </div>
   <div class="page-content">
@@ -107,12 +112,8 @@
           <a style="color: #fff;" href="#">See More</a>
         </div>
       </div>
-      <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-slides-per-view="2.5"
-        class="swiper-container swiper-init demo-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div>
-              <div class="birthday-card">
+      <div style="display: flex;justify-content: flex-start;overflow: scroll;">
+          <div class="birthday-card">
                 <div class="img-round-wrapper img">
                   <img src="../img/wish.png" style="width: 100%;"/>
                 </div>
@@ -123,38 +124,24 @@
                   <span>Wish</span>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div>
               <div class="birthday-card">
 
               </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div>
+            
               <div class="birthday-card">
 
               </div>
-            </div>
-          </div>
-
-
-        </div>
       </div>
 
     </div>
-    <div id="events-tabbar-modal-bg">
+    <!-- <div id="events-tabbar-modal-bg">
       <div class="display-flex justify-content-space-between">
         <a class="link">Survey</a>
         <a class="link">Events</a>
         <a class="link">About us</a>
         <a class="link">Gallery</a>
       </div>
-    </div>
+    </div> -->
     <!-- END OF EVENTS TABBAR MODAL -->
   </div>
 </div>
