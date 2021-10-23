@@ -45,5 +45,17 @@ var app = new Framework7({
     routes: routes
     // ... other parameters
   });
+
+  $$(document).on('page:beforein', function (e) {
+   
+    if(app.views.main.router.url=="/signin/" || app.views.main.router.url=="/flash/"){
+      document.querySelector("#mainNavBar .navbar-inner")["style"].display = "none"
+      document.querySelector("#mainNavBar .navbar-bg")["style"].background = "#015289";
+    }
+    else{
+      document.querySelector("#mainNavBar .navbar-inner")["style"].display = ""
+      document.querySelector("#mainNavBar .navbar-bg")["style"].background = "#0072BC";
+    }
+  })
   
   var mainView = app.views.create('.view-main');
