@@ -1,10 +1,14 @@
 <div class="page" data-name="sigin">
   <div class="toolbar toolbar-bottom">
-    <div class="toolbar-inner">
-      <a class="link">Survey</a>
-      <a class="link">Events</a>
-      <a class="link">About us</a>
-      <a class="link">Gallery</a>
+    <div class="toolbar-inner" style="
+        font-size: 13px;
+        padding: 12px;
+        text-align: center;
+        text-transform: none;">
+      <a ><div class="bottom-icon"><img src="./img/svg/survey.svg" /></div> <div class ="text">Survey</div></a>
+      <a > <div></div> <div class ="text">Events</div></a>
+      <a ><div class="bottom-icon"><img src="./img/svg/info.svg" /></div> <div class ="text">About Us</div></a>
+      <a ><div class="bottom-icon"><img src="./img/svg/galleryIcon.svg" /></div> <div class ="text">Gallery</div></a>
     </div>
   </div>
   <div class="page-content">
@@ -96,48 +100,94 @@
     </div>
 
     <!-- EVENTS TABBAR MODAL -->
-    <div id="events-tabar-modal">
-      <div class="display-flex justify-content-space-between">
-        <div>Today's Birthdays</div>
+    <div id="events-tabar-modal" class="">
+      <div class="display-flex justify-content-space-between" style="
+    color: white;
+    margin: 5px 15px;
+    text-transform: none;
+">
+        <div style="
+    font-size: 16px;
+    font-weight: bold;
+">Today's Birthdays</div>
         <div>
-          <a href="#">See More</a>
+          <a href="#" style="
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+">See More</a>
         </div>
       </div>
-      <div
-      data-pagination='{"el": ".swiper-pagination"}'
-      data-space-between="10"
-      data-slides-per-view="3"
-      class="swiper-container swiper-init demo-swiper"
-    >
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="birthday-card">
 
-          </div>
-        </div>
+      <div class="row" style="padding:5px 15px;">
+      
+      
+        <div style="
+        padding: 5px 10px;
+        /* width: 70px; */
+        border-radius: 15px;
+        background: white;
+    " class="">
+    
+        <div class="img-round-wrapper" style="
+        height: 53px;
+
+    "><img src="./img/dutta.png" style="
+        height: inherit;
+    "> </div>
+        <div style="
+    text-transform: none;
+    text-align: center;
+">Deblina Dutta</div>
+        <div style="
+    text-transform: none;
+    text-align: center;
+    background: #F6F6F6;
+    border-radius: 10px;
+    color: #E2211C;
+">Wish her</div>
         
-        <div class="swiper-slide">
-          <div class="birthday-card">
-            
-          </div>
-        </div>
-        
-        <div class="swiper-slide">
-          <div class="birthday-card">
-            
-          </div>
-        </div>
-        
-        <div class="swiper-slide">
-          <div class="birthday-card">
-            
-          </div>
-        </div>
-        
-        
-      </div>
-    </div>
+    
+    </div></div>
+
     </div>
     <!-- END OF EVENTS TABBAR MODAL -->
   </div>
 </div>
+
+
+<!-- 
+<div
+data-pagination='{"el": ".swiper-pagination"}'
+data-space-between="10"
+data-slides-per-view="3"
+class="swiper-container swiper-init demo-swiper"
+>
+<div class="swiper-wrapper">
+  <div class="swiper-slide">
+    <div class="birthday-card">
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide">
+    <div class="birthday-card">
+      
+    </div>
+  </div>
+  
+  <div class="swiper-slide">
+    <div class="birthday-card">
+      
+    </div>
+  </div>
+  
+  <div class="swiper-slide">
+    <div class="birthday-card">
+      
+    </div>
+  </div>
+  
+  
+</div>
+</div> -->

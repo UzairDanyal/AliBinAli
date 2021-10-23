@@ -313,7 +313,9 @@ p,span{
     overflow: auto;
     background-color: #f9f9f9;
 }
-
+#registrationContent form{
+    border-radius: 50px;
+}
 
 
 
@@ -332,9 +334,18 @@ p,span{
 }
 .genderselector {
     width: 100%;
-    position: relative;
     color: #a8a8a8;
-    font-size: 17px;
-    margin-left: 9%;
-    margin-top: 3%;
+    font-size: 22px;
+    margin-left: 64px;
 }
+.toolbar-inner .bottom-icon{
+    height: calc(var(--f7-toolbar-height)/2.2)
+}
+
+.toolbar-inner .bottom-icon img {
+    height:inherit;
+}
+.toolbar-inner a .text{
+    color: #6F6F6F;
+}
+
