@@ -71,7 +71,6 @@ margin: auto;
     min-height: 200px;
     z-index: 1000;
     background-size: cover;
-    padding:0 10px;
     margin-bottom: var(--f7-toolbar-height);
 }
 /* #events-tabbar-modal-bg{
@@ -127,3 +126,13 @@ width: 25%;
 .toolbar{
     z-index: 1;
 }
+
+
+@media only screen and (max-height: 650px) {
+    #homepage {
+        height: 65%;
+        overflow: auto;
+        background: #fff;
+        text-transform: none;
+    }
+  }
