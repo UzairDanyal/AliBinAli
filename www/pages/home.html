@@ -53,18 +53,18 @@
       <!-- END OF PROFILE -->
 
       <!-- TABS -->
-      <div class="tabs">
+      <div class="custom-tabs">
         <div class="row no-gap" >
           <div class="col-33 active align-self-center">
-            <span>Promotions & Discounts</span>
+            <a href="#" class="tab-link" data-tab="#promotions">Promotions & Discounts</a>
           </div>
 
           <div class="col-33 align-self-center">
-            <span>Buy & Sell</span>
+            <a href="" class="tab-link" data-tab="#buysell">Buy & Sell</a>
           </div>
 
           <div class="col-33 align-self-center">
-            <span>Events</span>
+            <a href="#" class="tab-link" data-tab="#events">Events</a>
           </div>
         </div>
         <div class="see-all">
@@ -73,9 +73,9 @@
       </div>
       <!-- END OF TABS -->
       <!-- TABS CONTENT -->
-      <div>
+      <div class="tabs">
         <!-- PROMOTIONS AND DISCOUNTS -->
-        <div id="discouts-tab">
+        <div id="promotions" class="tab">
           <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-slides-per-view="auto"
             data-centered-slides="true" class="swiper-container swiper-init demo-swiper demo-swiper-auto">
             <div class="swiper-pagination"></div>
@@ -99,6 +99,12 @@
           </div>
         </div>
         <!-- PROMOTIONS AND DISCOUNTS -->
+<!-- BUY SELL -->
+<div id="buysell" class="tab"></div>
+<!-- END OF BUY SELL -->
+<!-- EVENTS -->
+<div id="events" class="tab"></div>
+<!-- END OF EVENTS -->
 
       </div>
       <!-- END OF TABS CONTENT -->
