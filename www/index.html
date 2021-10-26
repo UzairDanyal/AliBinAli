@@ -33,13 +33,13 @@
     <div class="view view-main">
       <!-- Top Navbar -->
       <div id="mainNavBar" class="navbar" style="height: 63px;">
-        <div class="navbar-bg" style="background-color: #0072BC;"></div>
-        <div class="navbar-inner">
+        <div class="navbar-bg" style="background-color: #015289;"></div>
+        <div class="navbar-inner" style = "display: none;">
           <div class="left">
             <img src="./img/humburger@1X.png" style="width: 20px;height: 15px;margin-left: 10px;"/>
           </div>
           <div class="title" style="margin:auto">
-            <img onclick="app.views.main.router.navigate('/')" src="./img/alalogo.png" style="height: 50px;" />
+            <img onclick="app.views.main.router.navigate('/flash/')" src="./img/alalogo.png" style="height: 50px;" />
           </div>
           <!-- <div class="right">
             <img src="./img/rightArrow.svg" style="width: 20px;height: 15px;margin-left: 10px;opacity: 0;"/>
@@ -47,32 +47,9 @@
         </div>
       </div>
       <!-- Initial Page, "data-name" contains page name -->
-      <div data-name="home" class="page">
+      <div id="signinPage" onclick="app.views.main.router.navigate('/signin/')">
+        <div class="col-100 justify-content-center row"> <img style=" max-width:55%" src="./img/alalogo.png" /></div>
 
-
-        <!-- Bottom Toolbar -->
-
-
-        <!-- Scrollable page content -->
-        <div class="page-content">
-          <p>Page content goes here</p>
-          <!-- Link to another page -->
-          <a onclick="app.views.main.router.navigate('/signin/')">login Page</a>
-          <br/>
-          <a onclick="app.views.main.router.navigate('/flash/')">flash</a>
-          <br/>
-          <a onclick="app.views.main.router.navigate('/myprofile/')">My Profile</a>
-          <br/>
-          <a onclick="app.views.main.router.navigate('/home/')">Home</a>
-          <br />
-          <a onclick="app.views.main.router.navigate('/appdirectory/')">App Directory</a>
-          <br />
-          <a onclick="app.views.main.router.navigate('/externalpromotions/')">Promotions</a>
-          <br />
-          <a onclick="app.views.main.router.navigate('/latestpromotions/')">Latest Promotions</a>
-          <br />
-          <a onclick="app.views.main.router.navigate('/registration/')">Registration</a>
-        </div>
       </div>
     </div>
   </div>

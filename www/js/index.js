@@ -47,8 +47,8 @@ var app = new Framework7({
   });
 
   $$(document).on('page:beforein', function (e) {
-   const currentUrl=app.views.main.router.url;
-    if(currentUrl=="/signin/" || currentUrl=="/flash/"){
+   const currentUrl=app.views.main.router.url;  
+    if(currentUrl=="/signin/" || currentUrl=="/flash/" ||  currentUrl=="/"){
       document.querySelector("#mainNavBar .navbar-inner")["style"].display = "none"
       document.querySelector("#mainNavBar .navbar-bg")["style"].background = "#015289";
     }

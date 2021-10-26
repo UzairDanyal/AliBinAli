@@ -2,11 +2,11 @@ var routes = [
 
         {
             path: '/',
-            url: './index.html',
-            name: 'home',
+            url: './pages/flash.html',
+            name: 'flash',
           },
           {
-            path: '/myprofile',
+            path: '/myprofile/',
             url: './pages/myprofile.html',
             name: 'myprofile',
           },
