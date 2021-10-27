@@ -47,7 +47,7 @@ var app = new Framework7({
   });
 
   $$(document).on('page:beforein', function (e) {
-   const currentUrl=app.views.main.router.url;  
+   const currentUrl=app.views.main.router.url;    
     if(currentUrl=="/signin/" || currentUrl=="/flash/" ||  currentUrl=="/"){
       document.querySelector("#mainNavBar .navbar-inner")["style"].display = "none"
       document.querySelector("#mainNavBar .navbar-bg")["style"].background = "#015289";
@@ -58,12 +58,10 @@ var app = new Framework7({
     }
 
     if(currentUrl=="/home/"){
-    //   const birthdaySwiper = app.swiper.create('.swiper-container', {
-    //     spaceBetween: 30,
-    //     slidesPerView: document.documentElement.clientWidth/150.0
-    // });
-
-    
+      document.querySelector("#mainNavBar .navbar-inner .right")["style"].display = "none"
+    }
+    else{
+      document.querySelector("#mainNavBar .navbar-inner .right")["style"].display = ""
     }
   })
   

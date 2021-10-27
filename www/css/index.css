@@ -410,3 +410,7 @@ p,span{
     color: #6F6F6F;
 }
 
+
+.icon-arrow-right:before {
+    content: "\e606";
+  }
