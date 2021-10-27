@@ -58,11 +58,30 @@ var app = new Framework7({
     }
 
     if(currentUrl=="/home/"){
-      document.querySelector("#mainNavBar .navbar-inner .right")["style"].display = "none"
+      document.querySelector("#mainNavBar .navbar-inner .right #rightArrow")["style"].display = "none"
     }
     else{
-      document.querySelector("#mainNavBar .navbar-inner .right")["style"].display = ""
+      document.querySelector("#mainNavBar .navbar-inner .right #rightArrow")["style"].display = ""
     }
   })
+
+  function discountTab(args){
+
+    document.querySelectorAll(".custom-tabs .col-33").forEach(e=>{
+      e.classList.remove("active");
+    });
+    args.classList.add("active"); 
+  }
+
+  function changeActiveBottom(args){
+    console.log("change active bottom ");
+    document.querySelectorAll(".bottomChange").forEach(e=>{
+      if(e.classList.contains(".tabbar-home-active")){
+        e.classList.remove("tabbar-home-active");
+      }
+    });
+    args.classList.add("tabbar-home-active"); 
+
+  }
   
   var mainView = app.views.create('.view-main');

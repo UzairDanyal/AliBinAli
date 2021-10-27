@@ -6,14 +6,14 @@
         text-align: center;
         font-family: 'dax-regular'; 
         text-transform: none;">
-        <div style="width: 100% !important;
+        <div  style="width: 100% !important;
         height: var(--f7-toolbar-height);
         display: flex;
         justify-content: space-around;">
-          <div style="min-width: 15%;"><div class="bottom-icon"><img src="./img/svg/survey.svg" /></div> <div class ="text">Survey</div></div>
-          <div style="min-width: 15%;" class="tabbar-home-active"><div class="bottom-icon"><img src="./img/events.png" /></div> <div class ="text">Events</div></div>
-          <div style="min-width: 15%;" ><div class="bottom-icon"><i class="fas fa-info"></i></div> <div class ="text">About Us</div></div>
-          <div style="min-width: 15%;" ><div class="bottom-icon"><img src="./img/svg/galleryIcon.svg" /></div> <div class ="text">Gallery</div></div>
+          <div style="min-width: 15%;" class="bottomChange" onclick="changeActiveBottom(this)"><div class=" bottom-icon"><img src="./img/svg/survey.svg" /></div> <div class ="text">Survey</div></div>
+          <div style="min-width: 15%;" class="bottomChange tabbar-home-active" onclick="changeActiveBottom(this)"><div class="bottom-icon"><img src="./img/events.png" /></div> <div class ="text">Events</div></div>
+          <div style="min-width: 15%;" class="bottomChange" onclick="changeActiveBottom(this)"><div class="bottom-icon"><i class="fas fa-info"></i></div> <div class ="text">About Us</div></div>
+          <div style="min-width: 15%;" class="bottomChange" onclick="changeActiveBottom(this)"><div class="bottom-icon"><img src="./img/svg/galleryIcon.svg" /></div> <div class ="text">Gallery</div></div>
         </div>
     </div>
   </div>
@@ -31,10 +31,9 @@
             <h3 class="no-margin" style="font-size: 4.5vw; font-family: 'dax-bold';">Yvein Paras Hernandes</h3>
             <h5 class="no-margin" style="font-size: 3.5vw; font-family: 'dax-regular';">HR Consultant</h5>
             <h5 class="no-margin" style="font-size: 3.5vw; font-family: 'dax-regular';">ABA HeadQuarters</h5>
-            <div class="display-flex margin-top-half" style="font-size: 3vw;">
+            <div class="display-flex margin-top-half" style="font-size: 3vw;font-family: 'dax-regular';">
               <div>
                 <div style="background-color: #9f9a9a;
-                font-family: 'dax-regular';
                 border-radius: 20px;
                 text-align: center;">122</div>
                 Followers
@@ -58,15 +57,15 @@
       <!-- TABS -->
       <div class="custom-tabs">
         <div class="row no-gap" style="font-family: 'dax-medium';">
-          <div class="col-33 active align-self-center">
+          <div class="col-33  align-self-center" onclick="discountTab(this)">
             <a href="#" class="tab-link" data-tab="#promotions">Promotions & Discounts</a>
           </div>
 
-          <div class="col-33 align-self-center">
+          <div class="col-33 active align-self-center" onclick="discountTab(this)">
             <a href="#" class="tab-link" data-tab="#buysell">Buy & Sell</a>
           </div>
 
-          <div class="col-33 align-self-center">
+          <div class="col-33 align-self-center" onclick="discountTab(this)">
             <a href="#" class="tab-link" data-tab="#events">Events</a>
           </div>
         </div>
