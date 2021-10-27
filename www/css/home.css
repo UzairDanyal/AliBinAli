@@ -42,7 +42,6 @@
 }
 
 #homepage .custom-tabs a{
-    background: white;
     color:inherit !important;
 
 }
@@ -57,8 +56,8 @@
     color: #E55204 !important;
     text-transform: none;
     text-decoration: underline;
-    font-size: 4vw;
-    font-weight: bold;
+    font-size: 3.5vw;
+    font-family: 'dax-regular'; 
 }
 
 #homepage #discount-tab .swiper-slide{

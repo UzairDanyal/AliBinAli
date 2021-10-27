@@ -63,6 +63,57 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+ /* App fonts */
+ @font-face {
+    font-family: 'dax-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/appfonts/Dax-Regular.woff2);
+    /* src: local('dax-bold'), local('sf-pro-text'), url(../fonts/sf-pro-text-regular.woff) format('woff2'), url(../fonts/sf-pro-text-regular.woff) format('woff'); */
+}
+ @font-face {
+    font-family: 'dax-medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/appfonts/Dax-Medium.woff2);
+    /* src: local('dax-bold'), local('sf-pro-text'), url(../fonts/sf-pro-text-regular.woff) format('woff2'), url(../fonts/sf-pro-text-regular.woff) format('woff'); */
+}
+
+ @font-face {
+    font-family: 'dax-bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/appfonts/Dax-Bold.woff);
+    /* src: local('dax-bold'), local('sf-pro-text'), url(../fonts/sf-pro-text-regular.woff) format('woff2'), url(../fonts/sf-pro-text-regular.woff) format('woff'); */
+}
+
+@font-face {
+    font-family: 'dax-condensed-bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/appfonts/DaxCondensed-Bold.woff2);
+    /* src: local('dax-bold'), local('sf-pro-text'), url(../fonts/sf-pro-text-regular.woff) format('woff2'), url(../fonts/sf-pro-text-regular.woff) format('woff'); */
+}
+
+@font-face {
+    font-family: 'dax-condensed-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/appfonts/DaxCondensed-Regular.woff2);
+    /* src: local('dax-bold'), local('sf-pro-text'), url(../fonts/sf-pro-text-regular.woff) format('woff2'), url(../fonts/sf-pro-text-regular.woff) format('woff'); */
+}
+
+@font-face {
+    font-family: 'line-icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/appfonts/Simple-Line-Icons.woff2);
+    /* src: local('dax-bold'), local('sf-pro-text'), url(../fonts/sf-pro-text-regular.woff) format('woff2'), url(../fonts/sf-pro-text-regular.woff) format('woff'); */
+}
+
+/* end of block */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -181,11 +232,12 @@ p,span{
 #signinPage #register{
     color: white;
     font-size:15px;
+    font-family: 'dax-regular';
 }
 #signinPage #signin{
     background-color: #4e86ad;
-    font-size: 17px;
-    font-family: 'alata';
+    font-size: 19px;
+    font-family: 'dax-regular';
     color: white;
 }
 
@@ -240,12 +292,13 @@ p,span{
 #myprofile > #personalInfo .description{
     color: orange;
     font-size: 4.5vw;
-    font-weight: bold;
+    font-family: 'dax-bold';
 }
 
 #myprofile > #personalInfo  .title{
     color: #000000;
     font-size: 3.8vw;
+    font-family: 'dax-regular';
 }
 
 /* for the Directory page */
@@ -275,6 +328,7 @@ p,span{
     font-weight: 800;
     margin-top: auto;
     margin-bottom: 20%;
+    font-family: 'dax-bold';
 }
 
 
@@ -292,6 +346,7 @@ p,span{
     color: #F7AC82;
     font-size: 8px;
     font-weight: 900;
+    font-family: 'dax-bold';
     
 }
 .button-active{
@@ -317,6 +372,11 @@ p,span{
     border-radius: 50px;
 }
 
+#registrationContent form input{
+    font-family: 'dax-regular'
+}
+
+
 
 
 /* registeration Page */
@@ -331,6 +391,7 @@ p,span{
     margin-top: 6%;
     height: 40px;
     font-size: 17px;
+    font-family: 'dax-bold';
 }
 .genderselector {
     width: 100%;
