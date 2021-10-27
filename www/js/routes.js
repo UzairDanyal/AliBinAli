@@ -40,5 +40,9 @@ var routes = [
         {
           path: '/registration/',
           url: './pages/registration.html',
+        },
+        {
+          path: '/menu/',
+          url: './pages/menu.html',
         }
       ]
